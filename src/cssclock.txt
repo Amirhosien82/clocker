@@ -1,0 +1,190 @@
+/* styles.css */
+.center {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #ffd61f;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.hh {
+  position: absolute;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  top: 50%;
+}
+
+.paragraph {
+  position: absolute;
+  top: -9px;
+  right: 13px;
+  font-size: 18px;
+  font-weight: 600;
+  z-index: 10000;
+}
+
+.input {
+  width: 241px;
+  height: 40px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: end;
+  padding-right: 15px;
+  color: #e0e0e0;
+  outline: 0;
+}
+
+.colom-digital {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* styles.css */
+
+/* استایل پایه برای ItemDigital */
+.item-digital {
+  padding: 11px 29px;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  background-color: #f5f5f5;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* حالت فعال */
+.item-digital.active {
+  background-color: #ffd61f;
+}
+
+/* حالت btnSub */
+.item-digital.btn-sub {
+  width: 135px;
+  padding: 7px 0;
+  margin: 0 2px;
+}
+
+/* حالت btnSub hover */
+.item-digital.btn-sub:hover {
+  background-color: #d0aa02;
+}
+
+/* حالت isCancel */
+.item-digital.is-cancel:hover {
+  background-color: #e0e0e0;
+}
+
+/* حالت disabled */
+.item-digital:disabled {
+  color: #000;
+}
+
+/* استایل پایه برای ClockDigital */
+.clock-digital {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 17px; /* مقدار پیش‌فرض */
+}
+
+/* حالت isSub */
+.clock-digital.is-sub {
+  margin-top: 15px;
+}
+
+/* styles.css */
+
+/* استایل پایه برای Hour */
+.hour {
+  user-select: none;
+  font-size: 0.8rem;
+  display: inline-block;
+  color: #000; /* مقدار پیش‌فرض */
+  transition: all 0.1s;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 4px 0; /* مقدار پیش‌فرض */
+  padding: 9px; /* مقدار پیش‌فرض */
+  background-color: transparent;
+}
+
+/* حالت active */
+.hour.active {
+  background-color: #fce376;
+}
+
+/* حالت hover برای active */
+.hour.active:hover {
+  background-color: #ffd61f;
+}
+
+/* حالت hover برای غیر active */
+.hour:hover {
+  background-color: #fce376;
+}
+
+/* حالت isOne */
+.hour.is-one {
+  padding: 8px 11px;
+}
+
+/* حالت isEmity */
+.hour.is-emity {
+  padding: 9px;
+}
+
+/* استایل پایه برای Clock */
+.clock {
+  position: relative;
+  width: 270px;
+  height: 270px;
+  background-color: #f7f7f7; /* مقدار پیش‌فرض */
+  border: 1px solid #f7f7f7; /* مقدار پیش‌فرض */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+/* کلاس برای تغییر رنگ پس‌زمینه */
+.clock.bg-custom {
+  background-color: var(--bg-color);
+}
+
+/* کلاس برای تغییر رنگ حاشیه */
+.clock.border-custom {
+  border: var(--border-weight) solid var(--border-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  position: relative;
+  top: 5px;
+  border: 1px solid #d1d1d1;
+  padding: 30px;
+  padding-top: 45px;
+  border-radius: 15px;
+}
+
+.head {
+  width: 2px;
+  height: var(--head-height, 43%); /* پیش‌فرض */
+  background-color: var(--head-color, #fce376); /* پیش‌فرض */
+  position: absolute;
+  bottom: 50%;
+  transform: rotate(var(--head-rotate, 0deg)); /* پیش‌فرض */
+  transform-origin: bottom;
+}
